@@ -38,3 +38,9 @@ ChatVerse provides a sleek, modern interface for users to communicate in differe
 *   **Futuristic UI Theme**: A sleek, dark theme with vibrant teal accents.
 *   **Responsive Design**: Adapts to different screen sizes (basic responsiveness from TailwindCSS).
 
+## Project Structure
+
+### Backend (`convex/` directory)
+
+The `convex/` directory contains all the backend logic deployed to the Convex cloud.
+
