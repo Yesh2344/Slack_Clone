@@ -31,3 +31,10 @@ ChatVerse provides a sleek, modern interface for users to communicate in differe
 *   **User Profiles**:
     *   Edit display name.
     *   Upload and display a profile avatar.
+*   **Notifications**:
+    *   Visual indicators for channels with unread messages.
+    *   Global notification alert in the header for any unread messages.
+    *   Notifications are automatically marked as read when a channel is viewed.
+*   **Futuristic UI Theme**: A sleek, dark theme with vibrant teal accents.
+*   **Responsive Design**: Adapts to different screen sizes (basic responsiveness from TailwindCSS).
+
