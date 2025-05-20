@@ -18,3 +18,16 @@ ChatVerse provides a sleek, modern interface for users to communicate in differe
 *   **UI Components**:
     *   [Sonner](https://sonner.emilkowal.ski/): For toast notifications.
 
+## Features
+
+*   **User Authentication**: Secure sign-in using username/password (provided by the Chef template).
+*   **Channel Management**:
+    *   Create new channels.
+    *   List available channels.
+*   **Real-time Messaging**:
+    *   Send and receive messages instantly within channels.
+    *   Messages display author's name and avatar.
+*   **Typing Indicators**: See when other users are actively typing in a channel.
+*   **User Profiles**:
+    *   Edit display name.
+    *   Upload and display a profile avatar.
