@@ -44,3 +44,13 @@ ChatVerse provides a sleek, modern interface for users to communicate in differe
 
 The `convex/` directory contains all the backend logic deployed to the Convex cloud.
 
+*   `convex/schema.ts`: Defines the database schema, including tables for users (from auth), channels, messages, typing indicators, and notifications.
+*   `convex/auth.config.ts` & `convex/auth.ts`: Configuration for user authentication (managed by the Chef template).
+*   `convex/channels.ts`: Contains mutations for creating channels and queries for listing them.
+*   `convex/messages.ts`: Handles sending messages and listing messages for a channel. Also triggers notification creation.
+*   `convex/typing.ts`: Manages real-time typing indicators and their cleanup.
+*   `convex/notifications.ts`: Contains queries to fetch unread notifications and mutations to mark them as read.
+*   `convex/users.ts`: Handles user profile updates, including avatar uploads.
+*   `convex/crons.ts`: Defines scheduled jobs, such as cleaning up old typing indicators.
+*   `convex/http.ts`: Handles HTTP endpoints (primarily for auth in this template).
+
