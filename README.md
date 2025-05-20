@@ -54,3 +54,41 @@ The `convex/` directory contains all the backend logic deployed to the Convex cl
 *   `convex/crons.ts`: Defines scheduled jobs, such as cleaning up old typing indicators.
 *   `convex/http.ts`: Handles HTTP endpoints (primarily for auth in this template).
 
+### Frontend (`src/` directory)
+
+The `src/` directory contains the React application code.
+
+*   `src/main.tsx`: The entry point for the React application, sets up the Convex provider.
+*   `src/App.tsx`: The main application component, handles routing between authenticated and unauthenticated views, and manages overall layout.
+*   `src/index.css`: Global styles and TailwindCSS base/components/utilities.
+*   `src/SignInForm.tsx` & `src/SignOutButton.tsx`: Authentication components (managed by the Chef template).
+*   **Components**:
+    *   `src/ChannelsPanel.tsx`: Displays the list of channels and unread notification indicators.
+    *   `src/MessagesPane.tsx`: Displays messages for a selected channel, handles message input, and typing indicators.
+    *   `src/ProfileEditor.tsx`: Allows users to edit their profile information.
+    *   `src/CreateChannelModal.tsx`: Modal dialog for creating new channels.
+*   **Convex Integration**:
+    *   Components use `useQuery` and `useMutation` hooks from `convex/react` to interact with the backend.
+    *   The `convex/_generated/api` object provides typed access to backend functions.
+
+## Setup and Running
+
+This application is designed to run within the Chef (AI Software Developer) environment.
+
+1.  **Dependencies**: Dependencies are listed in `package.json` and are automatically managed by the Chef environment.
+2.  **Convex Backend**: The Convex backend is automatically provisioned and deployed by Chef.
+3.  **Environment Variables**:
+    *   `CONVEX_DEPLOYMENT`: Automatically set by Chef to link the frontend to your Convex deployment.
+4.  **Running the App**:
+    *   The Chef environment handles building and running the Vite development server for the frontend and deploying the Convex backend.
+    *   A preview URL is provided to access the application.
+
+## How It Works
+
+*   **Real-time Updates**: Convex's reactive queries ensure that the UI updates automatically when data changes in the database (e.g., new messages, typing status).
+*   **Authentication**: Leverages `@convex-dev/auth` for user management.
+*   **File Storage**: User avatars are uploaded to Convex file storage, and their URLs are stored in the user's profile.
+*   **Scheduled Tasks**: Cron jobs in Convex are used for periodic cleanup tasks (e.g., old typing indicators).
+
+This README provides a good starting point for understanding the project.
+"# Slack_Clone" 
