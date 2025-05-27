@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Defined in tailwind.config.js, but can have fallbacks or specific CSS vars if needed */
+  --color-primary: #14B8A6; /* Teal 500 */
+  --color-background: #1F2937; /* Cool Gray 800 */
+  --color-text-primary: #F3F4F6; /* Cool Gray 100 */
+  --color-text-secondary: #9CA3AF; /* Cool Gray 400 */
+}
+
+body {
+  font-family: theme('fontFamily.sans');
+  color: theme('colors.text.primary');
+  background-color: theme('colors.background.DEFAULT');
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @apply selection:bg-primary selection:text-background-dark;
+}
+
+/* Custom scrollbar for webkit browsers - Futuristic Style */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: theme('colors.background.dark');
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: theme('colors.primary.DEFAULT');
+  border-radius: 10px;
+  border: 2px solid theme('colors.background.dark'); /* Creates a nice padding effect */
+}
+::-webkit-scrollbar-thumb:hover {
+  background: theme('colors.primary.dark');
+}
+::-webkit-scrollbar-corner {
+  background: theme('colors.background.dark');
+}
+
+
+/* Auth input fields - adapt to dark theme or keep separate if auth pages are light */
+.auth-input-field {
+  @apply w-full px-4 py-3 rounded-lg bg-background-light border border-background-dark text-text-primary placeholder-text-secondary focus:border-primary focus:ring-2 focus:ring-primary outline-none transition-shadow shadow-sm hover:shadow-md focus:shadow-glow-sm;
+}
+
+/* Auth buttons - adapt or keep separate */
+.auth-button {
+  @apply w-full px-4 py-3 rounded-lg bg-auth-primary text-white font-semibold hover:bg-auth-hover transition-colors shadow-md hover:shadow-lg disabled:opacity-60 disabled:cursor-not-allowed;
+}
+
+/* General button style for the app (non-auth) */
+.btn {
+  @apply px-4 py-2 rounded-md font-medium transition-all duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800; /* Corrected class */
+}
+.btn-primary {
+  @apply bg-primary text-background-dark hover:bg-primary-dark focus:ring-primary disabled:opacity-50 disabled:cursor-not-allowed;
+}
+.btn-secondary {
+  @apply bg-background-light text-text-primary hover:bg-opacity-80 border border-background-dark focus:ring-primary disabled:opacity-50 disabled:cursor-not-allowed;
+}
+.btn-ghost {
+  @apply bg-transparent text-text-secondary hover:text-text-primary hover:bg-background-light focus:ring-primary disabled:opacity-50 disabled:cursor-not-allowed;
+}
+.btn-danger {
+  @apply bg-red-600 text-white hover:bg-red-700 focus:ring-red-500 disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+/* Input fields style for the app (non-auth) */
+.input-field {
+  @apply w-full px-4 py-2 rounded-lg bg-background-light border border-background-dark text-text-primary placeholder-text-secondary focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-shadow shadow-sm;
+}
+
+/* Modal styles */
+.modal-overlay {
+  @apply fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4 backdrop-blur-sm;
+}
+.modal-content {
+  @apply bg-background-light p-6 rounded-xl shadow-2xl w-full max-w-md transform transition-all;
+}
+
+/* Add a subtle glow to focused interactive elements */
+*:focus-visible {
+  @apply shadow-glow-sm;
+}
