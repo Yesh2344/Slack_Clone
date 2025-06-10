@@ -92,7 +92,3 @@ This application is designed to run within the Chef (AI Software Developer) envi
 
 This README provides a good starting point for understanding the project.
 "# Slack_Clone" 
-
-## Link
-
-https://focused-manatee-33.convex.app/
