@@ -99,3 +99,5 @@ This README provides a good starting point for understanding the project.
 https://focused-manatee-33.convex.app/
 
 ## Copyrights
+
+@Yeswanth Soma
