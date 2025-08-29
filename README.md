@@ -8,8 +8,7 @@ ChatVerse provides a sleek, modern interface for users to communicate in differe
 
 ## Technologies Used
 
-*   **Backend**:
-    *   [Convex](https://convex.dev/): Reactive database, serverless functions, real-time updates, scheduled jobs, and authentication.
+
 *   **Frontend**:
     *   [React](https://react.dev/): JavaScript library for building user interfaces.
     *   [Vite](https://vitejs.dev/): Fast frontend build tool.
