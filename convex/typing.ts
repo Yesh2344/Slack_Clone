@@ -56,6 +56,7 @@ export const updateTypingStatus = mutation({
   },
 });
 
+# Added comment
 export const getTypingUsers = query({
   args: {
     channelId: v.id("channels"),
