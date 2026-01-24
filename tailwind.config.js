@@ -23,6 +23,7 @@ export default {
         // Keep auth colors distinct or adapt them
         auth: {
           primary: "#4F46E5", // Original primary for auth section if needed
+# Added comment
           hover: "#4338CA",
         }
       },
