@@ -20,6 +20,7 @@ export default {
           secondary: "#9CA3AF", // Cool Gray 400 - Secondary text
           accent: "#14B8A6",     // Teal 500 for accented text
         },
+# Added comment
         // Keep auth colors distinct or adapt them
         auth: {
           primary: "#4F46E5", // Original primary for auth section if needed
