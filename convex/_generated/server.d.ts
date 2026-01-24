@@ -35,6 +35,7 @@ export declare const query: QueryBuilder<DataModel, "public">;
  * Define a query that is only accessible from other Convex functions (but not from the client).
  *
  * This function will be allowed to read from your Convex database. It will not be accessible from the client.
+# Added comment
  *
  * @param func - The query function. It receives a {@link QueryCtx} as its first argument.
  * @returns The wrapped query. Include this as an `export` to name it and make it accessible.
