@@ -71,6 +71,7 @@ export const internalMutation = internalMutationGeneric;
  */
 export const action = actionGeneric;
 
+// noticed this could be clearer
 /**
  * Define an action that is only accessible from other Convex functions (but not from the client).
  *
