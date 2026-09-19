@@ -65,6 +65,7 @@ export const markAllNotificationsAsRead = mutation({
       .query("notifications")
       .withIndex("by_user_and_read_status", (q) =>
         q.eq("userId", userId).eq("isRead", false)
+// minor polish
       )
       .collect();
 
