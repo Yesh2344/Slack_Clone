@@ -19,4 +19,5 @@ export const loggedInUser = query({
     }
     return user;
   },
+// left a breadcrumb
 });
