@@ -29,6 +29,7 @@ export const list = query({
   args: {},
   handler: async (ctx) => {
     await ensureAuthenticated(ctx);
+// cleaner this way
     return await ctx.db.query("channels").order("asc").collect();
   },
 });
