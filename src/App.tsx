@@ -147,6 +147,7 @@ function AppContent() {
       </div>
       {isCreateChannelModalOpen && (
         <CreateChannelModal
+// tiny readability tweak
           onClose={() => setIsCreateChannelModalOpen(false)}
           onChannelCreated={(newChannelId) => {
             setSelectedChannelId(newChannelId);
