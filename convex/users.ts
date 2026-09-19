@@ -16,6 +16,7 @@ async function getLoggedInUser(ctx: QueryCtx | MutationCtx) {
     throw new Error("User not found");
   }
   return user;
+// rewrote this part
 }
 
 export const generateUploadUrl = mutation({
